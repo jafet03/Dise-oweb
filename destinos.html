@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Destinos - Perú Turístico</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <!-- Mismo navbar que index.html -->
+    </header>
+
+    <main>
+        <h2>Principales Destinos Turísticos</h2>
+        
+        <!-- Tabla personalizada -->
+        <section class="table-section">
+            <table class="destinos-table">
+                <caption>Información de Destinos en Perú</caption>
+                <thead>
+                    <tr>
+                        <th>Destino</th>
+                        <th>Región</th>
+                        <th>Altitud</th>
+                        <th>Mejor Época</th>
+                        <th>Precio Aprox.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Machu Picchu</td>
+                        <td>Cusco</td>
+                        <td>2,430 msnm</td>
+                        <td>Abril - Octubre</td>
+                        <td>$150 USD</td>
+                    </tr>
+                    <tr>
+                        <td>Líneas de Nazca</td>
+                        <td>Ica</td>
+                        <td>520 msnm</td>
+                        <td>Todo el año</td>
+                        <td>$80 USD</td>
+                    </tr>
+                    <tr>
+                        <td>Lago Titicaca</td>
+                        <td>Puno</td>
+                        <td>3,812 msnm</td>
+                        <td>Mayo - Septiembre</td>
+                        <td>$100 USD</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- SVG animado -->
+        <section class="svg-section">
+            <h3>Geografía del Perú</h3>
+            <svg width="400" height="300" viewBox="0 0 400 300" class="peru-svg">
+                <!-- Costa -->
+                <rect x="50" y="200" width="300" height="50" fill="#f0e68c" class="costa">
+                    <title>Costa Peruana</title>
+                </rect>
+                
+                <!-- Sierra -->
+                <path d="M50 150 Q200 50 350 150 L350 200 L50 200 Z" fill="#8fbc8f" class="sierra">
+                    <title>Región Sierra</title>
+                </path>
+                
+                <!-- Selva -->
+                <path d="M50 150 Q200 250 350 150 L350 200 L50 200 Z" fill="#228b22" class="selva">
+                    <title>Región Selva</title>
+                </path>
+                
+                <!-- Animación de punto -->
+                <circle cx="200" cy="100" r="5" fill="red" class="moving-point">
+                    <animate attributeName="cy" from="100" to="180" dur="2s" repeatCount="indefinite"/>
+                </circle>
+            </svg>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Perú Turístico</p>
+    </footer>
+</body>
+</html>

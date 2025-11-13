@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre los maravillosos destinos turísticos de Perú">
+    <meta name="keywords" content="Perú, turismo, Machu Picchu, Nazca, Titicaca">
+    <title>Perú Turístico - Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <h1 class="logo">🇵🇪 Perú Turístico</h1>
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link active">Inicio</a></li>
+                    <li><a href="destinos.html" class="nav-link">Destinos</a></li>
+                    <li><a href="contacto.html" class="nav-link">Contacto</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Descubre la Magia de Perú</h2>
+                <p>Explora los destinos más increíbles del país andino</p>
+                <button class="cta-button">Comenzar Aventura</button>
+            </div>
+        </section>
+
+        <!-- Imagen con mapa interactivo -->
+        <section class="interactive-section">
+            <h3>Mapa Interactivo de Perú</h3>
+            <figure class="interactive-image">
+                <img src="img/peru-map.jpg" alt="Mapa de Perú" usemap="#perumap">
+                <map name="perumap">
+                    <area shape="rect" coords="100,150,200,200" alt="Lima" href="#lima" title="Lima">
+                    <area shape="circle" coords="300,250,30" alt="Cusco" href="#cusco" title="Cusco">
+                    <area shape="poly" coords="400,300,450,320,420,350" alt="Arequipa" href="#arequipa" title="Arequipa">
+                </map>
+                <figcaption>Haz clic en las áreas marcadas para más información</figcaption>
+            </figure>
+        </section>
+
+        <!-- Imagen adaptativa -->
+        <section class="adaptive-section">
+            <h3>Imágenes Adaptativas</h3>
+            <picture>
+                <source media="(min-width: 1200px)" srcset="img/machu-picchu-large.jpg">
+                <source media="(min-width: 768px)" srcset="img/machu-picchu-medium.jpg">
+                <img src="img/machu-picchu-small.jpg" alt="Machu Picchu" class="adaptive-img">
+            </picture>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Perú Turístico. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
